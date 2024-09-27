@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="pepsi.css">
+</head>
+
+<body>
+    <header class="head">
+        
+        <nav>
+            <div class="logo">pepsi</div>
+            <ul>
+                <li><a href="#">home</a></li>
+                <li><a href="#">about us</a></li>
+                <li><a href="#">contact</a></li>
+                <li><a href="#">sevices</a></li>
+            </ul>
+        </nav>
+        <div class="container">
+            <div class="text-content">
+                
+                <h1>what you like</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore cum tempore at quasi dolore odio, provident sint vitae temporibus explicabo distinctio aut consectetur consequuntur exercitationem maiores architecto ut blanditiis impedit.</p>
+                <a href="" class="btn">explore </a>
+            </div>
+            <div class="img">
+                   <img src="images/pepsi.png" alt="" class="main-img">
+            </div>
+        </div>
+        <div class="img-Box">
+            <li><img src="images/pepsi.png" onclick="imgslider('images/pepsi.png');changebg('#0062be')"></li>
+            <li><img src="images/pepsi2.png" onclick="imgslider('images/pepsi2.png');changebg('#1e1e1e')"></li>
+            <li><img src="images/pepsi3.png" onclick="imgslider('images/pepsi3.png');changebg('#e60c2c')"></li>
+        </div>
+    </header>
+    <script>
+      
+        function imgslider(anything){
+            document.querySelector(".main-img").src= anything;
+        }
+        function changebg(color){
+           const head= document.querySelector(".head");
+           head .style.backgroundColor = color;
+        }
+    </script>
+</body>
+</html>
